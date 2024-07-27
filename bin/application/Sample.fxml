@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="window" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <right>
+      <Pane fx:id="background" prefHeight="985.0" prefWidth="799.0" style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backgroundButton" layoutX="-13.0" layoutY="-12.0" mnemonicParsing="false" onAction="#hideNotif" prefHeight="997.0" prefWidth="826.0" style="-fx-background-color: lightblue;" text="Button" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="26.0" prefHeight="44.0" prefWidth="143.0" text="WORDLE">
+               <font>
+                  <Font name="Book Antiqua" size="29.0" />
+               </font>
+            </Label>
+            <GridPane alignment="CENTER" hgap="5.0" layoutX="183.0" layoutY="86.0" prefHeight="498.0" prefWidth="433.0" vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="a00" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a01" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a02" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a03" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a04" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="4">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a10" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a11" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a12" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a13" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a14" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a20" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a21" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a22" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a23" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a24" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a30" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a31" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a32" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a33" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a34" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a40" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a41" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a42" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a43" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a44" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a50" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a51" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a52" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a53" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="a54" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 50px;" styleClass="grid" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane layoutX="91.0" layoutY="634.0" prefHeight="77.0" prefWidth="618.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="keyq" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyq" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="q" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyw" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyw" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="w" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keye" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeye" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="e" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyr" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyr" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="r" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyt" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyt" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="t" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyy" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyy" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="y" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyu" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyu" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="u" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyi" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyi" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="i" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyo" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyo" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="o" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyp" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyp" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="p" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="9">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <GridPane layoutX="121.0" layoutY="721.0" prefHeight="77.0" prefWidth="618.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="keya" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeya" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="a" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keys" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeys" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="s" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyd" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyd" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="d" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyf" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyf" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="f" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyg" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyg" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="g" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyh" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyh" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="h" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyj" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyj" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="j" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyk" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyk" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="k" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyl" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyl" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="l" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <GridPane layoutX="20.0" layoutY="807.0" prefHeight="77.0" prefWidth="852.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="keyenter" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyenter" prefHeight="77.0" prefWidth="138.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="Enter" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyz" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyz" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="z" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyx" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyx" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="x" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyc" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyc" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="c" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyv" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyv" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="v" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyb" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyb" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="b" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keyn" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeyn" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="n" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keym" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeym" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="m" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="keydel" alignment="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#clickKeydel" prefHeight="77.0" prefWidth="135.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-image-width: 2px; -fx-border-color: black; -fx-border-radius: 10px; -fx-font-size: 30px; -fx-text-fill: black;" text="Del" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <TextField fx:id="notificationText" layoutX="208.0" layoutY="48.0" prefHeight="152.0" prefWidth="383.0" style="-fx-alignment: center; -fx-border-color: yellow; -fx-border-width: 5px; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-font-weight: bold; -fx-font-size: 25px; -fx-background-color: grey;" text="!!!!!!!!!!!!!!!!!!!!" visible="false">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </TextField>
+            <Button fx:id="resetButton" layoutX="633.0" layoutY="124.0" mnemonicParsing="false" onAction="#clear" prefHeight="39.0" prefWidth="152.0" style="-fx-background-color: grey; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 10px;" text="Reset" />
+            <Button fx:id="saveButton" layoutX="633.0" layoutY="67.0" mnemonicParsing="false" onAction="#hideGame" prefHeight="39.0" prefWidth="152.0" style="-fx-background-color: grey; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 10px;" text="Save and Exit" />
+            <Button fx:id="statsButton" layoutX="633.0" layoutY="180.0" mnemonicParsing="false" onAction="#showStats" prefHeight="39.0" prefWidth="152.0" style="-fx-background-color: grey; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 10px;" text="Check Stats" />
+            <Pane fx:id="statsBoard" layoutX="633.0" layoutY="235.0" prefHeight="358.0" prefWidth="153.0" style="-fx-background-color: grey; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-border-color: white;" visible="false">
+               <children>
+                  <Label fx:id="statsLabel" alignment="CENTER" layoutX="55.0" layoutY="14.0" prefHeight="18.0" prefWidth="44.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px;" text="Stats" />
+                  <Label fx:id="winLabel" alignment="CENTER" layoutX="17.0" layoutY="54.0" prefHeight="24.0" prefWidth="119.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px;" text="Wins: 0" />
+                  <Label fx:id="lossLabel" alignment="CENTER" layoutX="17.0" layoutY="93.0" prefHeight="24.0" prefWidth="119.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px;" text="Losses: 0" />
+                  <Label fx:id="guessDistributionLabel" alignment="CENTER" layoutX="8.0" layoutY="163.0" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px;" text="Guess Distribution" wrapText="true" />
+                  <Label fx:id="gdOneLabel" alignment="CENTER" layoutX="18.0" layoutY="199.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px;" text="1: 0" />
+                  <Label fx:id="gdSixLabel" alignment="CENTER" layoutX="18.0" layoutY="317.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px;" text="6: 0" />
+                  <Label fx:id="gdFiveLabel" alignment="CENTER" layoutX="18.0" layoutY="293.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px;" text="5: 0" />
+                  <Label fx:id="gdFourLabel" alignment="CENTER" layoutX="18.0" layoutY="269.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px;" text="4: 0" />
+                  <Label fx:id="gdThreeLabel" alignment="CENTER" layoutX="18.0" layoutY="245.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px;" text="3: 0" />
+                  <Label fx:id="gdTwoLabel" alignment="CENTER" layoutX="18.0" layoutY="223.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 3px;" text="2: 0" />
+               </children>
+            </Pane>
+            <Button fx:id="hideStatsButton" layoutX="633.0" layoutY="180.0" mnemonicParsing="false" onAction="#hideStats" prefHeight="39.0" prefWidth="152.0" style="-fx-background-color: grey; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 10px;" text="Hide Stats" visible="false" />
+         </children>
+      </Pane>
+   </right>
+</BorderPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Label alignment="CENTER" layoutX="174.0" layoutY="30.0" prefHeight="88.0" prefWidth="253.0" text="Wordle">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" layoutX="219.0" layoutY="213.0" mnemonicParsing="false" onAction="#start" prefHeight="88.0" prefWidth="230.0" style="-fx-border-radius: 10px; -fx-border-color: black; -fx-border-width: 5px; -fx-background-radius: 10px;" text="Start">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <Label layoutX="309.0" layoutY="336.0" text="Made by Nick Truong">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="400.0" fitWidth="141.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG_9878_edited.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="resumeButton" layoutX="356.0" layoutY="111.0" mnemonicParsing="false" onAction="#resumeGame" prefHeight="88.0" prefWidth="230.0" style="-fx-border-radius: 10px; -fx-border-color: black; -fx-border-width: 5px; -fx-background-radius: 10px;" text="Resume" visible="false">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
